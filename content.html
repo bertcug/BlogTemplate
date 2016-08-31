@@ -1,0 +1,130 @@
+<html>
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <title>旅游记事</title>
+	<script>
+		$().ready( function(){
+			$("#content").load("real_content.html #content", 
+				function(response,status,xhr){
+					if(status == "success" || status == "notmodified");
+					else{
+						$("#content").html("加载失败啦！")
+					}
+				}
+			);
+		});
+	</script>
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+          <span class="sr-only">Toggle navigation</span>
+        </button> 
+        <a class="navbar-brand" href="#">
+          <span>WuJunYang's BLOG</span>
+        </a></div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="index.html">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-primary">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#travel_china" aria-expanded="true"
+                    aria-controls="collapseOne">The Great China</a>
+                  </h4>
+                </div>
+                <div id="travel_china" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                    <ul class="media-list list-group">
+                      <li class="media bg-success" style="padding: 20px 25px">
+                        <a class="pull-left" href="#">
+                          <img class="img-circle media-object"
+                          src="https://unsplash.imgix.net/photo-1423439793616-f2aa4356b37e?w=1024&amp;q=50&amp;fm=jpg&amp;s=3b42f9c018b2712544debf4d6a4998ff"
+                          height="64" width="64" />
+                        </a>
+                        <div class="media-body">
+                          <h4 class="media-heading">Media heading</h4>
+                          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante</p>
+                        </div>
+                      </li>
+                      <li class="media bg-info" style="padding: 20px 25px;">
+                        <a class="pull-left" href="#">
+                          <img class="img-circle media-object"
+                          src="https://unsplash.imgix.net/photo-1422022098106-b3a9edc463af?w=1024&amp;q=50&amp;fm=jpg&amp;s=bbe0beb19ba846e0de37abd1f63acf13"
+                          height="64" width="64" />
+                        </a>
+                        <div class="media-body">
+                          <h4 class="media-heading">Media heading</h4>
+                          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-primary">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#travel_america"
+                    aria-expanded="false" aria-controls="travel_america">The amazing America</a>
+                  </h4>
+                </div>
+                <div id="travel_america" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                    <ul class="media-list">
+                      <li class="media bg-success" style="padding: 20px 25px">
+                        <a class="pull-left" href="#">
+                          <img class="img-circle media-object"
+                          src="https://unsplash.imgix.net/photo-1423439793616-f2aa4356b37e?w=1024&amp;q=50&amp;fm=jpg&amp;s=3b42f9c018b2712544debf4d6a4998ff"
+                          height="64" width="64" />
+                        </a>
+                        <div class="media-body">
+                          <h4 class="media-heading">Media heading</h4>
+                          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante</p>
+                        </div>
+                      </li>
+                      <li class="media bg-info" style="padding: 20px 25px">
+                        <a class="pull-left" href="#">
+                          <img class="img-circle media-object"
+                          src="https://unsplash.imgix.net/photo-1422022098106-b3a9edc463af?w=1024&amp;q=50&amp;fm=jpg&amp;s=bbe0beb19ba846e0de37abd1f63acf13"
+                          height="64" width="64" />
+                        </a>
+                        <div class="media-body">
+                          <h4 class="media-heading">Media heading</h4>
+                          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+        <div id="content" class="col-md-8 well">
+			 
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
