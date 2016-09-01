@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
 <html>
   <head>
     <meta name="generator"
@@ -5,15 +7,33 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/jquery.color-2.1.2.min.js"></script>
+    <script src="js/jquery.marquee.min.js"></script>
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <title>旅游记事</title>
-    <style type="text/css">
-                div &gt; a &gt; img:hover {
-                        opacity: 0.4;
-                }
-        
-</style>
+    <style type="text/css">div a img:hover {opacity: 0.4;}</style>
+    <script>
+	//闪烁字体变换颜色函数
+	function changeColor(id){
+		//var index = Math.floor(Math.random() * $.color_list.length);
+		//随机选颜色的效果不好
+		$("#change_color").css("color",$.color_list[$.color_index]);
+		$.color_index += 1;
+		$.color_index %= 7;
+	}
+	
+	$().ready( function(){ 
+		//设置跑马灯效果
+		$(".marquee").marquee({duration: 10000});
+		
+		//设置闪烁字体
+		$.color_list = ["red", "yellow", "blue", "black", "	Crimson", "Indigo", 
+		"Cyan"];
+		$.color_index = 0;
+		setInterval("changeColor()", 100);
+	});
+	</script>
   </head>
   <body>
     <!-- 导航条 -->
@@ -21,7 +41,7 @@
       <div class="container">
         <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
-          <span class="sr-only">Toggle navigation</span>
+          <span class="sr-only">Togglenavigation</span>
         </button> 
         <a class="navbar-brand">
           <span>Brand</span>
@@ -50,14 +70,14 @@
               <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-12">
                   <h1>JunYang Wu</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-                  sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
-                  nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
-                  aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
-                  felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aeneancommodo ligula eget dolor. Aenean massa. Cum
+                  sociisnatoquepenatibus et magnis dis parturient montes, nasceturridiculus mus.Donec quam felis, ultricies nec,
+                  pellentesque eu,pretium quis,sem. Nulla consequat massa quis enim. Donec pedejusto, fringillavel, aliquet nec,
+                  vulputate eget, arcu. In enimjusto, rhoncus ut,imperdiet a, venenatis vitae, justo. Nullamdictum felis eu
+                  pedemollis pretium. Integer tincidunt. Crasdapibus. Vivamus elementumsemper nisi.</p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                  <img src="img/myself.jpg" class="img-responsive img-rounded" />
+                  <img src="img/myself.jpg" class="img-responsive img-rounded" alt="myself" />
                 </div>
               </div>
             </div>
@@ -66,6 +86,11 @@
       </div>
     </div>
     <!-- 个人介绍 -->
+    <div class="marquee well col-md-12" data-direction='left' data-pauseonhover='true'>
+	This is important! Don't you know? let me tell you all about this!
+	</div>
+	
+	<div class="col-md-12 well text-center" id="change_color"><h4>闪烁字体设置</h4></div>
     <div class="well">
       <div class="container">
         <div class="row">
@@ -77,42 +102,43 @@
           <div class="col-md-4 col-sm-6 col-xs-12">
             <a>
               <img src="https://unsplash.imgix.net/photo-1423683249427-8ca22bd873e0?w=1024&amp;q=50&amp;fm=jpg&amp;s=5e57c661d0f772ce269188a6f5325708"
-              class="img-responsive img-rounded thumbnail" />
+              class="img-responsive img-rounded thumbnail" alt="" />
             </a>
             <h3>A title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisici elitaskjasjkdhsdnaskjdhjska</p>
+            <p>Lorem ipsum dolor sit amet, consecteturadipisicielitaskjasjkdhsdnaskjdhjska</p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12">
             <a>
               <img src="https://unsplash.imgix.net/photo-1422222948315-28aadb7a2cb8?w=1024&amp;q=50&amp;fm=jpg&amp;s=cfeadbd7a991e58b553bee29a7eeca55"
-              class="img-responsive img-rounded thumbnail" />
+              class="img-responsive img-rounded thumbnail" alt="" />
             </a>
             <h3>A title</h3>
-            <p>Lorem ipsum dolor asdsadasdassit amet, consectetur adipisici elit</p>
+            <p>Lorem ipsum dolor asdsadasdassit amet, consecteturadipisicielit</p>
           </div>
           <div class="clearfix visible-sm-block"></div>
           <div class="col-md-4 col-sm-6 col-xs-12">
             <a>
               <img src="https://unsplash.imgix.net/photo-1421986527537-888d998adb74?w=1024&amp;q=50&amp;fm=jpg&amp;s=e633562a1da53293c4dc391fd41ce41d"
-              class="img-responsive img-rounded thumbnail" />
+              class="img-responsive img-rounded thumbnail" alt="" />
             </a>
             <h3>A ttile</h3>
-            <p>Lorem ipsum dolor sitamet,consecte turad ipisicie litaslkd jasdjklsahd jklash dkjlsa hdkjlas hdkljs ahkldhn kljsahd jklsahdk jld jkl ashdjk ashd asj khd asjk</p>
+            <p>Lorem ipsum dolor sitamet,consecte turad ipisicielitaslkdjasdjklsahd jklash dkjlsa hdkjlas hdkljs ahkldhn
+            kljsahdjklsahdkjld jkl ashdjk ashd asj khd asjk</p>
           </div>
           <div class="clearfix visible-md-block"></div>
           <div class="col-md-4 col-sm-6 col-xs-12">
             <a>
               <img src="https://unsplash.imgix.net/reserve/QTrNn7DETWGsjyS5L2n5__MG_8345.jpg?w=1024&amp;q=50&amp;fm=jpg&amp;s=f89d9bb3940033eca06ed432a250bb6d"
-              class="img-responsive img-rounded thumbnail" />
+              class="img-responsive img-rounded thumbnail" alt="" />
             </a>
             <h3>A title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisici easkjdjsakhdjkasndhjksalit</p>
+            <p>Lorem ipsum dolor sit amet, consecteturadipisicieaskjdjsakhdjkasndhjksalit</p>
           </div>
           <div class="clearfix visible-sm-block"></div>
           <div class="col-md-4 col-sm-6 col-xs-12">
             <a>
               <img src="https://unsplash.imgix.net/photo-1417128281290-30a42da46277?w=1024&amp;q=50&amp;fm=jpg&amp;s=2edb796eb5e657f2c82704a1e6573938"
-              class="img-responsive img-rounded thumbnail" />
+              class="img-responsive img-rounded thumbnail" alt="" />
             </a>
             <h3>A title</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisici elit</p>
@@ -120,7 +146,7 @@
           <div class="col-md-4 col-sm-6 col-xs-12">
             <a>
               <img src="https://unsplash.imgix.net/photo-1422513391413-ddd4f2ce3340?w=1024&amp;q=50&amp;fm=jpg&amp;s=282e5978de17d6cd2280888d16f06f04"
-              class="img-responsive img-rounded thumbnail" />
+              class="img-responsive img-rounded thumbnail" alt="" />
             </a>
             <h3>A title</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisici elit</p>

@@ -1,281 +1,254 @@
-<html><head>
-        <meta name="generator" content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="js/jquery-3.1.0.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/modernizr.custom.97074.js"></script>
-        <!-- <script type="text/javascript" src="js/move-top.js"></script> -->
-        <script src="js/easing.js"></script>
-        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-        <title>JunYang Wu's BLOG</title>
-        <script type="text/javascript">
-            jQuery(document).ready(function($) {
-            			$(".scroll").click(function(event){
-            				event.preventDefault();
-            				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-                         });
-                     });
-        </script>
-    </head><body>
-        <!-- banner -->
-        <div id="home" class="banner">
-            <div class="container">
-                <div class="banner-grids">
-                    <div class="col-md-6 navigation">
-                        <div class="nav-left">
-                            <div class="grid__item color-4">
-                                <a class="link link--kumya" href="#home">
-
-                <span data-letters="JunYang Wu" style="font-size: 64px">JunYang Wu</span>
-
-              </a>
-                            </div>
-                        </div>
-                        <div class="nav-right">
-                            <span class="menu">
-                                <img src="img/menu.png" alt="">
-                            </span>
-                            <nav class="cl-effect-1">
-                                <ul class="nav1">
-                                    <li>
-                                        <a class="scroll" href="#home">Home</a>
-                                    </li>
-                                    <li>
-                                        <a class="scroll" href="#about">About</a>
-                                    </li>
-                                    <li>
-                                        <a class="scroll" href="#portfolio">Portfolio</a>
-                                    </li>
-                                    <li>
-                                        <a class="scroll" href="#services">Services</a>
-                                    </li>
-                                    <li>
-                                        <a class="scroll" href="#contact">Contact</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <!-- script for menu -->
-                            <script>
-                                $( "span.menu" ).click(function() {
-                                			$( "ul.nav1" ).slideToggle( 300, function() {
-                                			// Animation complete.
-                                             });
-                                		});
-                            </script>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="col-md-6 banner-image text-center">
-                        <img src="img/banner.png" alt="">
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
+<html>
+<head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.custom.97074.js"></script>
+    <!-- <script type="text/javascript" src="js/move-top.js"></script> -->
+    <script src="js/easing.js"></script>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <title>JunYang Wu's BLOG</title>
+    <script type="text/javascript">
+            jQuery(document).ready( function($){
+				$(".scroll").click( function(event){
+					event.preventDefault();
+                    $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+                });
+            });   
+	</script>
+</head>
+<body>
+    <!-- banner -->
+    <div id="home" class="banner">
+      <div class="container">
+        <div class="banner-grids">
+          <div class="col-md-6 navigation">
+            <div class="nav-left">
+              <div class="grid__item color-4">
+                <a class="link link--kumya" href="#home">
+                  <span data-letters="JunYang Wu" style="font-size: 64px">JunYang Wu</span>
+                </a>
+              </div>
             </div>
+            <div class="nav-right">
+              <span class="menu">
+                <img src="img/menu.png" alt="" />
+              </span>
+              <nav class="cl-effect-1">
+                <ul class="nav1">
+                  <li>
+                    <a class="scroll" href="#about">About</a>
+                  </li>
+                  <li>
+                    <a class="scroll" href="#category">Category</a>
+                  </li>
+                  <li>
+                    <a class="scroll" href="#portfolio">Wonderful Life</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- script for menu -->
+            <script>
+				$( "span.menu" ).click( function(){
+					$( "ul.nav1" ).slideToggle(300)
+				});
+            </script>
+			
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="col-md-6 banner-image text-center">
+            <img src="img/banner.png" alt="" />
+          </div>
+          <div class="clearfix"></div>
         </div>
-        <!-- //banner -->
-        <!-- about -->
-        <div id="about" class="about">
-            <div class="container">
-                <div class="about-info">
-                    <h3>ABOUT ME</h3>
-                    <h4>Who I am and why I design</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</p>
-                </div>
-                <div class="about-grids">
-                    <div class="col-md-6 col-xs-12 about-grid">
-                        <h4>What I do and my experience</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat.</p>
-                    </div>
-                    <div class="col-md-6 col-xs-12 about-grid">
-                        <h4>My goals</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat.</p>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
+      </div>
+    </div>
+    <!-- //banner -->
+    <!-- about -->
+    <div id="about" class="about">
+      <div class="container">
+        <div class="about-info">
+          <h3>ABOUT ME</h3>
+          <h4>Who I am and why I design</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
-        <!-- //about -->
-        
-        <!-- 内容分类 -->
-        <div class="bg-warning" style="padding: 35px 0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-xs-12 col-sm-6">
-                        <div class="thumbnail">
-                            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/blurry/800x600/1.jpg" class="img-responsive img-rounded">
-                            <div class="caption">
-                                <h3 class="text-center">旅游日志</h3>
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id
-                                    elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies
-                                    vehicula ut id elit.<a style="font-size: 20px" href="content.html"><span class="glyphicon glyphicon-hand-right"></span></a></p>
-								
-                            </div>
-                        </div>
-                    </div>
-<<<<<<< HEAD
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-=======
-                    <div class="col-md-3 col-xs-12 col-sm-6">
->>>>>>> origin/master
-                        <div class="thumbnail">
-                            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/blurry/800x600/3.jpg" class="img-responsive img-rounded">
-                            <div class="caption">
-                                <h3 class="text-center">校园生活</h3>
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id
-                                    elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies
-                                    vehicula ut id elit.</p>
-                            </div>
-                        </div>
-                    </div>
-<<<<<<< HEAD
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-=======
-                    <div class="col-md-3 col-xs-12 col-sm-6">
->>>>>>> origin/master
-                        <div class="thumbnail">
-                            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/blurry/800x600/10.jpg" class="img-responsive img-rounded">
-                            <div class="caption">
-                                <h3 class="text-center">课外兴趣</h3>
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id
-                                    elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies
-                                    vehicula ut id elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-12 col-sm-6">
-                        <div class="thumbnail">
-                            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/blurry/800x600/14.jpg" class="img-responsive img-rounded">
-                            <div class="caption">
-                                <h3 class="text-center">动漫爱好</h3>
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id
-                                    elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies
-                                    vehicula ut id elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="about-grids">
+          <div class="col-md-6 col-xs-12 about-grid">
+            <h4>What I do and my experience</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="col-md-6 col-xs-12 about-grid">
+            <h4>My goals</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="clearfix"></div>
         </div>
-        
-        <div id="portfolio" class="gallery">
-            <div class="container">
-                <script src="js/jquery.chocolat.js"></script>
-                <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
-                <!--light-box-files -->
-                <script type="text/javascript" charset="utf-8">
-                    $(function() {
-                    					$('.gallery a').Chocolat();
-                    				});
-                </script>
-                <h3>My Wonderful Life</h3>
-                <section>
-                    <ul id="da-thumbs" class="da-thumbs">
-                        <li class="col-md-3 col-xs-12">
-                            <a href="img/a1.jpg" rel="title" class="b-link-stripe b-animate-go thickbox">
-								<img src="img/a1.jpg" alt="">
-								<div><h5>VIEW</h5></div>
-							</a>
-                        </li>
-						
-                        <li class="col-md-3 col-xs-12">
-                            <a href="img/a2.jpg" rel="title" class="b-link-stripe b-animate-go thickbox">
-								<img src="img/a2.jpg" alt="">
-								<div><h5>VIEW</h5></div>
-							</a>
-                        </li>
-						
-                        <li  class="col-md-3 col-xs-12">
-                            <a href="img/a3.jpg" rel="title" class="b-link-stripe b-animate-go thickbox">
-								<img src="img/a3.jpg" alt="">
-								<div><h5>VIEW</h5></div>
-							</a>
-                        </li>
-						
-                        <li class="col-md-3 col-xs-12">
-                            <a href="img/a4.jpg" rel="title" class="b-link-stripe b-animate-go thickbox">
-								<img src="img/a4.jpg" alt="">
-								<div><h5>VIEW</h5></div>
-							</a>
-                        </li>
-						
-                        <li class="col-md-3 col-xs-12">
-                            <a href="img/a5.jpg" rel="title" class="b-link-stripe b-animate-go thickbox">
-								<img src="img/a5.jpg" alt="">
-								<div><h5>VIEW</h5></div>
-
-							</a>
-                        </li>
-						
-                        <li class="col-md-3 col-xs-12">
-                            <a href="img/a6.jpg" rel="title" class="b-link-stripe b-animate-go thickbox">
-								<img src="img/a6.jpg" alt="">
-								<div><h5>VIEW</h5></div>
-
-							</a>
-                        </li>
-						
-                        <li class="col-md-3 col-xs-12">
-                            <a href="img/a7.jpg" rel="title" class="b-link-stripe b-animate-go thickbox">
-								<img src="img/a7.jpg" alt="">
-								<div><h5>VIEW</h5></div>
-
-							</a>
-                        </li>
-						
-                        <li class="col-md-3 col-xs-12">
-                            <a href="img/a1.jpg" rel="title" class="b-link-stripe b-animate-go thickbox">
-								<img src="img/a1.jpg" alt="">
-								<div><h5>VIEW</h5></div>
-
-							</a>
-                        </li>
-						
-                        <li class="col-md-3 col-xs-12">
-                            <a href="img/a2.jpg" rel="title" class="b-link-stripe b-animate-go thickbox">
-								<img src="img/a2.jpg" alt="">
-								<div><h5>VIEW</h5></div>
-							</a>
-                        </li>
-                    </ul>
-                </section>
-                <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
-                <script type="text/javascript">
-                    $(function() {
-                    					$('#da-thumbs > li').each( function() { $(this).hoverdir(); } );
-                    				});
-                </script>
+      </div>
+    </div>
+    <!-- //about -->
+    <!-- 内容分类 -->
+    <div id="category" class="bg-warning" style="padding: 35px 0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-xs-12 col-sm-6">
+            <div class="thumbnail">
+              <img src="img/travel.jpg"
+              class="img-responsive img-rounded" />
+              <div class="caption">
+                <a href="blog_subject.html"><h3 class="text-center">旅游日志</h3></a>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+                Nullam id dolor id nibh ultricies vehicula ut id elit.
+                <a style="font-size: 20px" href="content.html"></a></p>
+              </div>
             </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+              <img src="img/school_life.jpg"
+              class="img-responsive img-rounded" />
+              <div class="caption">
+                <h3 class="text-center">校园生活</h3>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+                Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+              <img src="http://pingendo.github.io/pingendo-bootstrap/assets/blurry/800x600/10.jpg"
+              class="img-responsive img-rounded" />
+              <div class="caption">
+                <h3 class="text-center">课外兴趣</h3>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+                Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-12 col-sm-6">
+            <div class="thumbnail">
+              <img src="http://pingendo.github.io/pingendo-bootstrap/assets/blurry/800x600/14.jpg"
+              class="img-responsive img-rounded" />
+              <div class="caption">
+                <h3 class="text-center">动漫爱好</h3>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+                Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <!--//gallery-->
-        <footer style="margin: 25px 0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center" style="font-size: 10px">
-                        <h6>
-                            <span class="glyphicon glyphicon-copyright-mark">&nbsp;</span>
-                            <strong>Copyright 2016-2020 BERTCUG</strong>
-                        </h6>
-                        <br>
-                        <p>
-                            <span class="glyphicon glyphicon-phone-alt">&nbsp;</span>Tel: xxxxxxxxxxxxxxxxxxxxxxxxx&nbsp;&nbsp;&nbsp;
-                            <span class="glyphicon glyphicon-envelope">&nbsp;</span>Email: junyangWu@163.com
-						</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    
-
-</body></html>
+      </div>
+    </div>
+    <div id="portfolio" class="gallery">
+      <div class="container">
+      <script src="js/jquery.chocolat.js"></script>
+      <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8" />
+      <!--light-box-files -->
+      <script>$(function(){ $('.gallery a').Chocolat(); });</script>
+      <h3>My Wonderful Life</h3>
+      <section>
+        <ul id="da-thumbs" class="da-thumbs">
+          <li class="col-md-3 col-xs-12">
+            <a href="img/a1.jpg" rel="title" class="b-link-stripe b-animate-go thickbox">
+              <img src="img/a1.jpg" alt="" />
+              <div>
+                <h5>VIEW</h5>
+              </div>
+            </a>
+          </li>
+          <li class="col-md-3 col-xs-12">
+            <a href="img/a2.jpg" rel="title" class="b-link-stripe b-animate-go thickbox">
+              <img src="img/a2.jpg" alt="" />
+              <div>
+                <h5>VIEW</h5>
+              </div>
+            </a>
+          </li>
+          <li class="col-md-3 col-xs-12">
+            <a href="img/a3.jpg" rel="title" class="b-link-stripe b-animate-go thickbox">
+              <img src="img/a3.jpg" alt="" />
+              <div>
+                <h5>VIEW</h5>
+              </div>
+            </a>
+          </li>
+          <li class="col-md-3 col-xs-12">
+            <a href="img/a4.jpg" rel="title" class="b-link-stripe b-animate-go thickbox">
+              <img src="img/a4.jpg" alt="" />
+              <div>
+                <h5>VIEW</h5>
+              </div>
+            </a>
+          </li>
+          <li class="col-md-3 col-xs-12">
+            <a href="img/a5.jpg" rel="title" class="b-link-stripe b-animate-go thickbox">
+              <img src="img/a5.jpg" alt="" />
+              <div>
+                <h5>VIEW</h5>
+              </div>
+            </a>
+          </li>
+          <li class="col-md-3 col-xs-12">
+            <a href="img/a6.jpg" rel="title" class="b-link-stripe b-animate-go thickbox">
+              <img src="img/a6.jpg" alt="" />
+              <div>
+                <h5>VIEW</h5>
+              </div>
+            </a>
+          </li>
+          <li class="col-md-3 col-xs-12">
+            <a href="img/a7.jpg" rel="title" class="b-link-stripe b-animate-go thickbox">
+              <img src="img/a7.jpg" alt="" />
+              <div>
+                <h5>VIEW</h5>
+              </div>
+            </a>
+          </li>
+          <li class="col-md-3 col-xs-12">
+            <a href="img/a1.jpg" rel="title" class="b-link-stripe b-animate-go thickbox">
+              <img src="img/a1.jpg" alt="" />
+              <div>
+                <h5>VIEW</h5>
+              </div>
+            </a>
+          </li>
+          <li class="col-md-3 col-xs-12">
+            <a href="img/a2.jpg" rel="title" class="b-link-stripe b-animate-go thickbox">
+              <img src="img/a2.jpg" alt="" />
+              <div>
+                <h5>VIEW</h5>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <script type="text/javascript" src="js/jquery.hoverdir.js"></script> 
+      <script>$(function() { $('#da-thumbs li').each( function() { $(this).hoverdir(); } );});</script>
+	  </div>
+    </div>
+    <!--//gallery-->
+    <footer style="margin: 25px 0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center" style="font-size: 10px">
+            <h6>
+            <span class="glyphicon glyphicon-copyright-mark"></span> 
+            <strong><a href="travel.html">Copyright 2016-2020 BERTCUG</a></strong></h6>
+            <br />
+            <p>
+            <span class="glyphicon glyphicon-phone-alt"></span>Tel: xxxxxxxxxxxxxxxxxxxxxxxxx
+            <span class="glyphicon glyphicon-envelope"></span>Email: junyangWu@163.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
